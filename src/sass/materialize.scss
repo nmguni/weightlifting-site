@@ -164,6 +164,7 @@ hr{
 
 .Mohamed{
   @extend .blue-grey, .lighten-2;
+  @include faded-black();
   h1{
     padding: 20px;
   }
@@ -172,7 +173,37 @@ hr{
     @include custom-shadow();
    margin-right: 10px;
   }
+  .content{
+   margin-left: 20px;
+   font-size: .9rem;
+   line-height: 1.8rem;
+   letter-spacing: 1.5px;
+  }
 }
+
+.honor-mentions{
+
+  h1{
+    @include custom-text-shadow();
+    @include faded-black();
+    text-transform: uppercase;
+  }
+  .parallax{
+    img{
+      opacity: 0.6!important;
+  }
+  h1{
+    margin-top: 15%;
+    text-align: center;
+  }
+  }
+ 
+}
+.bg-dark{
+ background: #666;
+}
+
+
 
 
 
