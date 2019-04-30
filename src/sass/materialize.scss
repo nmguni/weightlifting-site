@@ -62,10 +62,13 @@ html {
 
 .page-top{
   height: 690px;
-  @extend .blue-grey, .lighten-2;
+  @extend .grey, .lighten-4;
   z-index: 3;
+  @include custom-shadow();
+  @include faded-black();
 }
 .bottom{
+  @include faded-black();
   text-align: center;
   background: #EEE;
   @include custom-shadow();
@@ -93,14 +96,22 @@ html {
   }
 }
 .history-cards{
+ 
   h2{
     text-transform: uppercase;
   }
   .card-panel{
     border-radius: 25px;
+    
     .card-title{
       font-size: 1.5rem;
       text-transform: uppercase;
+      
+    }
+    transition: .5s;
+    &:hover{
+      box-shadow: -1px 3px 8px 3px rgba(0,0,0,0.4);
+      transition-timing-function: ease-in-out;
     }
   }
 }
@@ -138,7 +149,7 @@ html {
 
 .luxu{
   @extend .red, .lighten-2;
-  padding: 10px;
+  padding: 15px;
   @include faded-black();
   letter-spacing: 1.5px;
   
@@ -176,6 +187,7 @@ hr{
 .Mohamed{
   @extend .blue-grey, .lighten-3;
   @include faded-black();
+  padding: 10px;
   h1{
     padding: 20px;
   }
@@ -274,14 +286,6 @@ hr{
 }
 
 
-
-// footer
-.footer{
-  text-align: center;
-  margin-top: 3rem;
-  height: 150px;
-  background: #666;
-}
 
 // carusel -------------------
 .carousel {

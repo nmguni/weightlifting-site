@@ -17,62 +17,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Quiz Game</title>
+  <title>Weightlifting</title>
 </head>
 
 <body>
   <!-- navbar -->
   <div class="page-top">
+    <div class="navbar-fixed">
+      <nav class=" nav-wrapper blue-grey darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo">
+            <img src="img/logo.png" height="50px" width="50px" alt="">
+          </a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#history">about</a>
+            </li>
+            <li>
+              <a href="#luxu">Lü Xiaojun</a>
+            </li>
+            <li>
+              <a href="#Mohamed">Mohamed Ihab</a>
+            </li>
+            <li>
+              <a href="#Nijat">Nijat Rahimov</a>
+            </li>
+            <li>
+              <a href="#mentions">Honorable mentions
 
-    <nav class="nav-wrapper red lighten-2">
-      <div class="container">
-        <a href="#" class="brand-logo">
-          <img src="img/logo.png" height="50px" width="50px" alt="">
-        </a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-links">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="#">home</a>
-          </li>
-          <li>
-            <a href="#">about</a>
-          </li>
-          <li>
-            <a href="#luxu">Lü Xiaojun</a>
-          </li>
-          <li>
-            <a href="#Mohamed">Mohamed Ihab</a>
-          </li>
-          <li>
-            <a href="#Nijat">Nijat Rahimov</a>
-          </li>
-          <li>
-            <a href="#mentions">Honorable mentions</a>
-          </li>
+              </a>
+            </li>
 
-        </ul>
-      </div>
-    </nav>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
     <ul class="sidenav" id="mobile-links">
       <li>
         <a href="#">home</a>
       </li>
       <li>
-        <a href="#">about</a>
+        <a href="#history">History</a>
       </li>
       <li>
-        <a href="#">contact</a>
+        <a href="#luxu">Lü Xiaojun</a>
       </li>
       <li>
-        <a href="#">login</a>
+        <a href="#Mohamed">Mohamed Ihab</a>
+      </li>
+      <li>
+        <a href="#Nijat">Nijat Rahimov</a>
+      </li>
+      <li>
+        <a href="#mentions">Honorable mentions</a>
       </li>
     </ul>
+
+
+
     <!-- header content -->
 
     <header>
-      <div class="container">
+      <div class=" container">
         <h1 class="title center">olympic weightlifting</h1>
 
       </div>
@@ -82,13 +95,15 @@
   </div>
   <div class="bottom">
     <div class="container">
-      <section class="what-is" id="history">
-        <h2>What is it?</h2>
+      <section class="what-is">
+        <h2>About?</h2>
         <div class="oly-info">
           <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi quos officia quasi fugit dolor esse voluptas.
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum assumenda distinctio hic dolores magni dolor
             at veniam ullam necessitatibus perspiciatis. Voluptatibus, debitis commodi natus ullam, itaque voluptates quisquam
             quibusdam quam similique ipsum vitae!</p>
+
+          <div id="history"></div>
         </div>
         <br>
         <hr>
@@ -261,23 +276,7 @@
         <!-- </section> -->
 
         <!-- bottom history -->
-        <div class="carousel">
-          <a class="carousel-item" href="#one!">
-            <img src="img/Lu-Xiaojun2.jpg">
-          </a>
-          <a class="carousel-item" href="#two!">
-            <img src="img/Lu-Xiaojun2.jpg">
-          </a>
-          <a class="carousel-item" href="#three!">
-            <img src="img/Lu-Xiaojun2.jpg">
-          </a>
-          <a class="carousel-item" href="#four!">
-            <img src="img/Lu-Xiaojun2.jpg">
-          </a>
-          <a class="carousel-item" href="#five!">
-            <img src="img/Lu-Xiaojun2.jpg">
-          </a>
-        </div>
+
 
       </section>
     </div>
@@ -294,6 +293,7 @@
   </div>
 
   <!-- lu-------------------- -->
+  <br>
   <div id="luxu" class="luxu big-card">
     <div class="container">
       <h1 class="center">Lü Xiaojun </h1>
@@ -383,6 +383,7 @@
     <!-- MOHAMED----------------- -->
   </div>
   <br>
+
   <div id="Mohamed" class="Mohamed big-card">
     <div class="container">
       <h1 class="center">Mohamed Ehab </h1>
@@ -566,7 +567,7 @@
       <!-- start paralax -->
       <div class="parallax-container">
         <div class="parallax">
-          <img src="img/dimityr-paralax.jpg">
+          <img src="img/dmitry-klokov-2_1024x1024.jpg">
           <h1>dimitry klovoc</h1>
         </div>
       </div>
@@ -685,10 +686,40 @@
   </section>
 
 
-  <section class="footer">
-    <p>2019</p>
-  </section>
 
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 
 
 
