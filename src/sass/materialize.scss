@@ -57,15 +57,23 @@ html {
   @include custom-shadow();
 }
   
-
+.strong{
+  color: #000;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
 
 
 .page-top{
   height: 690px;
-  @extend .grey, .lighten-4;
+  @extend .grey, .lighten-1;
   z-index: 3;
   @include custom-shadow();
   @include faded-black();
+  h1{
+    font-size: 6rem;
+  }
 }
 .bottom{
   @include faded-black();
@@ -84,6 +92,14 @@ html {
     text-transform: uppercase;
     margin-top: 20%;
     @include custom-text-shadow();
+   
+  }
+
+  header{
+    .img-logo{
+      height: 100px;
+      opacity: .75;
+    }
   }
 
 .what-is{
@@ -93,6 +109,13 @@ html {
   }
   .oly-info{
     font-size: 1.5rem;
+    a{
+      // @include faded-black();
+      text-transform: capitalize;
+      color: rgba(255, 255, 0, 0.5);
+
+      
+    }
   }
 }
 .history-cards{
@@ -258,11 +281,7 @@ hr{
     @include faded-black();
     letter-spacing: 1.8px;
     line-height: 1.5rem;
-    .strong{
-      color: #000;
-      font-weight: 900;
-      font-size: 1.5rem;
-    }
+   
     a{
       transition: .5s;
       color: #000;
@@ -385,4 +404,23 @@ hr{
   .carousel-item:not(.active) .materialboxed {
     pointer-events: none;
   }
+}
+
+// footer
+footer{
+  a{
+    padding: 10px;
+  }
+  i:hover{
+   color: #78909c;
+   transition: .5s;
+  }
+}
+
+
+
+
+// MEDIA Q-------------------
+@media only screen and (min-width: 640px) {
+  background: $white;
 }
