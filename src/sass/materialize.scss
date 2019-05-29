@@ -255,8 +255,12 @@ hr{
     @include custom-shadow();
  }
 }
+// mentions -----------
 .honor-mentions{
-
+  .mentions_title{
+    @include custom-text-shadow();
+    @include faded-black();
+  }
   h2{
     margin: 0;
     padding: 10px;
@@ -264,8 +268,9 @@ hr{
 
   h1{
     @include custom-text-shadow();
-    @include faded-black();
+    color: red;
     text-transform: uppercase;
+    font-weight: 800;
   }
   .parallax{
     img{
@@ -437,6 +442,13 @@ footer{
   .oly-info{
     padding-top: 15%;
 
+  }
+}
+
+
+@media only screen and (min-width: 500px){
+  .swipe{
+    display: none;
   }
 }
 
