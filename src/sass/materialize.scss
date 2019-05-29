@@ -417,14 +417,16 @@ footer{
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .page-top{
+    h1{
+      font-size: 7vw;
+    }
+  }
+  #mentions{
+    h1{
+      font-size: 6vw;
+    }
+  }
+}
 
-
-
-// MEDIA Q-------------------
-// @media only screen and (max-width: 500px) {
-//   .luxu{
-//    .lu-img{
-//      height: 300px;
-//    } 
-//   }
-// }
