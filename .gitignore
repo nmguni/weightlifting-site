@@ -2,8 +2,4 @@
 node_modules/
 package-lock.json
 
-dis/css/
-dist/js/
 
-src/sass/components
-src/sass/components/forms

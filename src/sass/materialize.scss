@@ -53,7 +53,7 @@ html {
 }
 .big-card{
   margin: 50px 50px 0px;
-  border-radius: 20px;
+  border-radius: 5x;
   @include custom-shadow();
 }
   
@@ -67,16 +67,12 @@ html {
 
 .page-top{
   height: 690px;
-  @extend .grey, .lighten-1;
   z-index: 3;
-  @include custom-shadow();
-  @include faded-black();
   h1{
     font-size: 6rem;
   }
 }
 .bottom{
-  @include faded-black();
   text-align: center;
   background: #EEE;
   @include custom-shadow();
@@ -85,7 +81,7 @@ html {
   left: 50px;
   z-index: 2;
   margin: -100px 50px 0px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 // header / navigation 
   .title{
@@ -108,9 +104,12 @@ html {
     @include custom-text-shadow();
   }
   .oly-info{
+    p{
+      color: #fff;
+   
+    }
     font-size: 1.5rem;
     a{
-      // @include faded-black();
       text-transform: capitalize;
       color: rgba(255, 255, 0, 0.5);
 
@@ -118,14 +117,15 @@ html {
     }
   }
 }
+// HISTORY--------------------------
 .history-cards{
- 
+  font-weight: 600;
   h2{
     text-transform: uppercase;
+    color: #fff;
   }
   .card-panel{
-    border-radius: 25px;
-    
+    border-radius: 5px;
     .card-title{
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -138,15 +138,17 @@ html {
     }
   }
 }
+// HISTORY EQIP------------------
 .hs-equipment{
   h2{
     text-transform: uppercase;
+    color: #fff;
   }
   .card-image{
-    border-radius: 20px 20px;
+    border-radius: 5px 5px;
   }
   .card{
-    border-radius: 20px;
+    border-radius: 5px;
   }
 }
 
@@ -171,26 +173,25 @@ html {
 // lu --------------------
 
 .luxu{
-  @extend .red, .lighten-2;
+  @extend .teal, .darken-4;
+  color: #fff;
   padding: 15px;
-  @include faded-black();
   letter-spacing: 1.5px;
-  
-  
+  border-radius: 5px;
   h1{
     @include custom-text-shadow();
-   @include faded-black();
+   color: #fff;
    letter-spacing: 2px;
   }
   .content{
+    color: #fff;
     margin-left: 20px;
-   @include faded-black();
    letter-spacing: 1.5px;
    padding-bottom: 20px;
   }
   .lu-img{
     margin-right: 20px;
-    border-radius: 25px 25px 25px;
+    border-radius: 5px 5px 5px;
     opacity: 0.8;
     @include custom-shadow();
   }
@@ -200,22 +201,22 @@ html {
 hr{
   border: 0;
     height: 1px;
-    background: #000;
-    background-image: linear-gradient(to right, #666, #000, #666);
+    background: #fff;
 }
 
 
 // Mohamed ----------------------
 
 .Mohamed{
-  @extend .blue-grey, .lighten-3;
-  @include faded-black();
+  @extend .blue-grey, .darken-3;
+  color: #fff;
   padding: 10px;
+  border-radius: 5px;
   h1{
     padding: 20px;
   }
   .mo-img{
-    border-radius: 25px;
+    border-radius: 5px;
     @include custom-shadow();
    margin-right: 10px;
   }
@@ -244,19 +245,21 @@ hr{
 }
 // nijat ----------------------
 .nijat-rahimov{
-  @extend .cyan, .lighten-3;
-  @include faded-black();
+  @extend .cyan, .darken-3;
+  color: #fff;
+  border-radius: 5px;
   h1{
     @include custom-text-shadow();
   }
  .nija-img {
-  border-radius: 25px;
+  border-radius: 5px;
     opacity: 0.75;
     @include custom-shadow();
  }
 }
 // mentions -----------
 .honor-mentions{
+  border-radius: 5px;
   .mentions_title{
     @include custom-text-shadow();
     @include faded-black();
@@ -297,16 +300,22 @@ hr{
       }
     }
   }
+  .strong2{
+    font-size: 22px;
+    font-weight: 600;
+  }
  
 }
 .bg-dark{
- background: rgba(0, 0, 0, 0.2);
- opacity: 0.9;
+ background: rgba(0, 0, 0, 0.603);
  padding: 5px;
+p{
+  color: #fff;
+}
 }
 
 .border-radious{
-  border-radius: 0 0 20px 20px ;
+  border-radius: 0 5px 5px ;
 }
 
 
@@ -315,7 +324,7 @@ hr{
 .carousel {
   
   img{
-    border-radius: 20px;
+    border-radius: 5px;
     @include custom-shadow();
     &:hover{
       opacity: .5;
@@ -400,7 +409,7 @@ hr{
       background-color: rgba(255,255,255,.5);
 
       transition: background-color .3s;
-      border-radius: 50%;
+      border-radius: 5px;
     }
   }
 
@@ -429,6 +438,7 @@ footer{
     }
   }
   #mentions{
+    border-radius: 5px;
     h1{
       font-size: 6vw;
     }
