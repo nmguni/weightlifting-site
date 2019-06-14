@@ -53,7 +53,7 @@ html {
 }
 .big-card{
   margin: 50px 50px 0px;
-  border-radius: 5x;
+  border-radius: 5px;
   @include custom-shadow();
 }
   
@@ -263,6 +263,7 @@ hr{
   .mentions_title{
     @include custom-text-shadow();
     @include faded-black();
+
   }
   h2{
     margin: 0;
@@ -309,6 +310,10 @@ hr{
 .bg-dark{
  background: rgba(0, 0, 0, 0.603);
  padding: 5px;
+ .light{
+  color: #fff;
+
+ } 
 p{
   color: #fff;
 }
@@ -462,3 +467,27 @@ footer{
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .container{
+    width: 100%;
+  }
+  #Nijat{
+    margin: 25px 15px 0px 15px; 
+  }
+  .bottom{
+    margin: 0px 15px 0px 15px;  
+          }
+
+      .mobileResp{
+        margin: 0px 15px 0px 15px;
+      }
+      #mentions{
+       .big-card{
+        margin: 25px 15px 0px 15px;
+       }
+       hr{
+         display: none;
+       }
+      }
+    }
+ 
